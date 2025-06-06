@@ -7,7 +7,58 @@
     <title>Tailwind Team Project 2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body>
-    <h1 class="text-blue-600 text-5xl">Hello</h1>
+  <body class="bg-[#141916] w-[90%] mx-auto">
+    
+    <!-- header part start  -->
+     <header class="flex items-center justify-between mx-auto py-6 px-4">
+       <!-- logo  -->
+       <div>
+          <img src="images/logo-light.png.png" alt="">
+        </div>
+
+        <!-- mubile menu  -->
+         <div class="md:hidden">
+           <button id="mobile-menu-button">
+            <i class="fa-solid fa-bars-staggered text-white text-2xl"></i>
+           </button>
+         </div>
+      
+       
+        <!-- link part -->
+         <nav class="md:flex hidden items-center space-x-6">
+            <a href="#" class="text-white hover:text-[#4b4a4a] transition">About Us</a>
+            <a href="#" class="text-white hover:text-[#4b4a4a] transition">Our Services</a>
+            <a href="#" class="text-white hover:text-[#4b4a4a] transition">Work with Us</a>
+             <a href="#" class="text-white hover:text-[#4b4a4a] transition">Blog</a>
+         </nav>
+         <!-- button  -->
+          <div class="md:flex hidden items-center gap-3" >
+            <div class="h-[20px] w-[20px] leading-[20px] rounded-full bg-[#665DCD] "></div>
+            <a href="#" class="text-center text-[15px] text-white font-semibold">Get In Touch</a>
+          </div>
+      
+     </header>
+
+     <!-- mobile menu  -->
+     <div id="mobile-menu" class="fixed inset-0 bg-[#191919]/90 z-50 flex flex-col justify-center items-center">
+      <div class="absolute top-4 right-4">
+          <button id="close-menu-button"><i class="fa-solid fa-xmark text-white text-[32px]"></i></button>
+        </div>
+
+        <!-- link part -->
+         <nav class="flex  flex-col  space-y-10">
+            <a href="#" class="text-white hover:text-[#4b4a4a] transition">About Us</a>
+            <a href="#" class="text-white hover:text-[#4b4a4a] transition">Our Services</a>
+            <a href="#" class="text-white hover:text-[#4b4a4a] transition">Work with Us</a>
+             <a href="#" class="text-white hover:text-[#4b4a4a] transition">Blog</a>
+         </nav>
+         <!-- button  -->
+          <div class="md:flex hidden items-center gap-3 mt-10" >
+            <div class="h-[20px] w-[20px] leading-[20px] rounded-full bg-[#665DCD] "></div>
+            <a href="#" class="text-center text-[15px] text-white font-semibold">Get In Touch</a>
+          </div>
+
+      </div>
+     </div>
   </body>
 </html>
