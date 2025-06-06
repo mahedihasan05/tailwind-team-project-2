@@ -2,12 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- css link -->
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
     <title>Tailwind Team Project 2</title>
+    <!-- font awesome icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <h1 class="text-blue-600 text-5xl">Hello</h1>
+    <!-- header start -->
+     <header class="w-full h-screen bg-[#141619] text-white px-5 py-8">
+        <div class="container mx-auto">
+          <nav class="flex items-center justify-between h-auto">
+            <div>
+              <a href="#">
+                  <img src="images/logo-light.png.png" alt="logo">
+              </a>
+            </div>
+            <div>
+                <ul class="flex items-center gap-8 text-gray-200">
+                    <li class="hover:text-gray-400"><a href="#">ABOUT US</a></li>
+                    <li class="flex items-center gap-2 hover:text-gray-400">
+                      <a href="#">OUR SERVICES</a>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li class="hover:text-gray-400"><a href="#">WORK WITH US</a></li>
+                    <li class="hover:text-gray-400"><a href="#">BLOG</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="images/button_before.png" alt="icon">
+                <h4 class="cursor-pointer  hover:text-gray-400">GET IN TOUCH</h4>
+            </div>
+        </nav>
+
+        <div class="w-full h-full text-center mt-[9%]">
+          <h1 class="text-white font-semibold text-7xl leading-[1.5]">Balancing <br> Crypto Markets</h1>
+          <p class="text-gray-300 text-[1.1rem] my-9 leading-[1.6]">Our fully aoutomated proprietary quantitative trading software <br> provides 24/7 liquidity to 170+ crypto assets acroos 25+ <br> centralized spot and derivative crypto exchanges.</p>
+          <button class="px-6 py-3 cursor-pointer rounded-sm text-white font-medium bg-gradient-to-r from-[#665DCD]  to-blue-500">GET IN TOUCH</button>
+        </div>
+      </div>
+     </header>
+    <!-- header end -->
   </body>
 </html>
+
